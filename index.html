@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Eldritch Scroll | Chuunibyou Text Generator</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(15, 15, 15);
+    color: rgb(255, 255, 255);
+  }
+  #chuunibyouText {
+    font-size: 26px;
+    margin-bottom: 20px;
+    white-space: pre-line; /* Ensures line breaks are preserved */
+    padding-top: 10px;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+
+  h1 {
+    font-size: 16px;
+    padding: 20px;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+</style>
+  <h1>Unveil the secrets of the arcane tome, and read a passage from the Eldritch Scroll, where whispers of forbidden knowledge dance upon its pages, beckoning the daring to glimpse into the abyssal depths of the unknown.</h1>
+  <div id="chuunibyouText"></div>
+  <button onclick="generateChuunibyouText()">Generate Chuunibyou Text</button>
+
+
+<script>
+  const beginnings1 = [
+    "In the shadows of the night",
+    "Amidst the whispering winds",
+    "Bathed in the ethereal light",
+    "From the depths of oblivion",
+    "Within the infernal embrace",
+    "Shrouded in the mystic aura",
+    "Amidst the ruins of ancient civilizations",
+    "Beneath the veil of reality",
+    "Within the crucible of destiny",
+    "From the ashes of bygone empires"
+  ];
+
+  const beginnings2 = [
+    "where the moon casts its eerie glow upon the land",
+    "and the howls of the unseen echo through the night",
+    "of the celestial realm, I am the chosen harbinger",
+    "where chaos reigns supreme, I am the sovereign ruler",
+    "of the arcane, I am the enigmatic master",
+    "where the whispers of lost souls echo, I walk",
+    "in the realm of dreams and nightmares, I command",
+    "where fates are forged and destinies intertwined",
+    "where embers of forgotten glory still flicker, I rise",
+    "where the echoes of forgotten legends resound, I arise"
+  ];
+
+  const middles1 = [
+    "With the power coursing through my veins",
+    "In the depths of my being",
+    "Within the depths of my soul",
+    "With the gaze of a thousand suns",
+    "Empowered by the celestial energies",
+    "In the crucible of my soul",
+    "With the fury of a tempest unleashed",
+    "Through the depths of despair",
+    "With the wisdom of the ancients",
+    "With each step I take"
+  ];
+
+  const middles2 = [
+    "like the raging tempest, I am the epitome of untamed chaos",
+    "I harness the arcane forces that shape reality itself",
+    "lies the ancient wisdom of forgotten epochs",
+    "I pierce through the veil of reality and unveil the mysteries",
+    "that flow through the very essence of my being",
+    "where the flames of passion burn eternal",
+    "I wield the elemental forces of nature to bend reality",
+    "and the heights of triumph, I journey forth",
+    "and the strength of the divine, I carve my path",
+    "I weave the threads of fate and destiny into a tapestry"
+  ];
+
+  const endings1 = [
+    "to unleash the fury of a thousand suns",
+    "to command the very elements and bend them to my will",
+    "to unlock the secrets of the universe",
+    "to embrace the darkness within",
+    "to forge my own path through the chaos",
+    "to ascend to the celestial realms",
+    "to guide the lost souls to their salvation",
+    "to transcend the boundaries of mortality",
+    "to conquer the forces of darkness",
+    "to emerge victorious from the crucible of fate"
+  ];
+
+  const endings2 = [
+    "upon the realm of mortals",
+    "and lead them into the light",
+    "and achieve apotheosis",
+    "and usher in a new era of cosmic enlightenment",
+    "and claim my rightful place as the ruler of all",
+    "and shape the destiny of worlds",
+    "and take my rightful place among the stars",
+    "and bring forth a new dawn of cosmic enlightenment",
+    "and unveil the mysteries of the cosmos to all"
+  ];
+
+  // Function to generate chuunibyou text
+  function generateChuunibyouText() {
+    const beginning1 = beginnings1[Math.floor(Math.random() * beginnings1.length)];
+    const beginning2 = beginnings2[Math.floor(Math.random() * beginnings2.length)];
+    const middle1 = middles1[Math.floor(Math.random() * middles1.length)];
+    const middle2 = middles2[Math.floor(Math.random() * middles2.length)];
+    const ending1 = endings1[Math.floor(Math.random() * endings1.length)];
+    const ending2 = endings2[Math.floor(Math.random() * endings2.length)];
+    document.getElementById("chuunibyouText").innerText = `${beginning1}, ${beginning2}.\n${middle1}, ${middle2}.\n${ending1}, ${ending2}!`;
+  }
+
+  // Function to change background
+  function changeBackground(imageUrl) {
+    document.body.style.backgroundImage = `url('${imageUrl}')`;
+  }
+</script>
+</body>
+</html>
